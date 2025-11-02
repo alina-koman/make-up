@@ -1,0 +1,32 @@
+.header-box {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.logo {
+    color: #222;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1.25;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+
+.nav {
+    display: flex;
+    margin: 0 auto;
+}
+
+.ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 40px;
+}

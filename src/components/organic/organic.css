@@ -1,0 +1,28 @@
+.organic {
+    margin: 0 0 75px;
+    background: #FDF8F5;
+}
+
+.organic-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text-box {
+    padding: 51px 0;
+}
+
+.text-box h3 {
+    padding: 0 0 26px;
+    color: #222;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.25;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}

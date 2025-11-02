@@ -1,0 +1,64 @@
+.footer {
+    background: #FAFAFA;
+}
+
+.footer-top {
+    padding: 120px 0 0;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.footer-top h2 {
+    color: #222;
+    font-size: 2.25rem;
+    font-weight: 500;
+    line-height: 1.27;
+    max-width: 500px;
+}
+
+.input-box input, .input-box input::placeholder {
+    background: #FFF;
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.25;
+    padding: 18px;
+}
+
+.line {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.logo-text h3{
+    font-size: 2.5rem;
+    padding-bottom: 30px;
+}
+
+.logo-text p {
+    max-width: 320px;
+}
+
+.footer-nav {
+    padding: 58px 0 50px;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+}
+
+.title-item {
+    padding: 0 0  38px;
+    color: #222;
+}
+
+.footer-item {
+    padding: 0 0  20px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    column-gap: 27px;
+}

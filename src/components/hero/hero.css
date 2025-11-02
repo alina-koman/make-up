@@ -1,0 +1,26 @@
+.hero {
+    padding: 74px 0 105px;
+}
+
+.hero-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero-title {
+    padding: 0 0 30px;
+    color: #000;
+    font-weight: 500;
+    line-height: 1.25;
+}
+
+.hero-desc {
+    padding: 0 0 34px;
+    line-height: 1.6;
+    max-width: 515px;
+}
+
+.hero-box img {
+    width: 600px;
+}
