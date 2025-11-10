@@ -1,0 +1,34 @@
+.perfect {
+    padding: 0 0  100px;
+}
+
+.perfect-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text-perfect h2 {
+    padding: 0 0 20px;
+    max-width: 520px;
+    color: #000;
+    font-weight: 500;
+    line-height: 1.25;
+    font-size: 3.5rem;
+}
+
+.text-perfect p {
+    max-width: 608px;
+}
+
+.text-one {
+    padding: 0 0 20px;
+}
+
+.text-two {
+    padding: 0 0 52px;
+}
+
+.perfect-box img {
+    width: 550px;
+}
