@@ -10,3 +10,20 @@
     gap: 20px;
     padding: 20px 0;
 }
+
+.filter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.filter button {
+    color: #FAFAFA;
+    background: #402F2C;
+    padding: 10px;
+}
+
+.search-input {
+    padding: 10px 20px;
+    border: #402F2C solid 1px;
+}

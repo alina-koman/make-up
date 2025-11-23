@@ -1,24 +1,42 @@
-import './popular.css'
+import { useState } from 'react';
+import { useProducts } from '../../context/ProductsContext'; // Беремо товари з контексту
 import Card from './../card/Card';
-
-import img1 from '../../img/product1.svg'
-import img2 from '../../img/product2.svg'
+import './popular.css';
 
 function Popular() {
+    const { items } = useProducts();
+    const [visible, setVisible] = useState(2);
+
+    const showMore = () => {
+        setVisible((prev) => prev + 3);
+    };
+
     return (
         <section className="popular">
             <div className="container popular-box">
                 <div className="popular-desc">
                     <h2>Our Popular Product</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
 
                 <div className="cards-box">
-                    <Card className="card-buy" img={img1} title="Cosmetic products" desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" price={134}></Card>
-                    <Card className="card-buy" img={img2} title="Cosmetic products" desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy" price={122}></Card>
+                    {items.slice(0, visible).map((product) => (
+                        <Card
+                            key={product.id}
+                            id={product.id}
+                            img={product.imageUrl}
+                            title={product.name}
+                            desc={product.description}
+                            price={product.price}
+                        />
+                    ))}
                 </div>
 
-                <button className="more">More</button>
+                {visible < items.length && (
+                    <button className="more" onClick={showMore}>
+                        More
+                    </button>
+                )}
             </div>
         </section>
     )

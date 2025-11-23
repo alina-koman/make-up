@@ -1,18 +1,22 @@
+import { Link } from 'react-router-dom'; // 1. Імпортуємо Link
 import './card.css';
-import PrimaryButton from '../ui/PrimaryButton';
 
-function Card({title, desc, img, price}) {
+// 2. Обов'язково додаємо 'id' у список props
+function Card({ id, title, desc, img, price }) {
     return (
         <div className="card">
             <img src={img} alt={title}/>
             <div className="card-desc">
-                <h3>{title}</h3>
+                <h3>
+                    <Link to={`/product/${id}`}>{title}</Link>
+                </h3>
                 <p>{desc}</p>
             </div>
 
             <div className="card-buy">
-                <PrimaryButton>Buy Now</PrimaryButton>
-                <PrimaryButton>Add To Cart</PrimaryButton>
+                <Link to={`/product/${id}`}>
+                    <button className="hero-btn">View More</button>
+                </Link>
 
                 <p className="price">${price}</p>
             </div>
