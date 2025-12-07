@@ -1,0 +1,52 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Футболка Добрий ранок",
+      "description": "Якісна бавовна, патріотичний принт.",
+      "price": 120,
+      "imageUrl": "/img/product1.svg",
+      "category": "clothing"
+    },
+    {
+      "id": 2,
+      "name": "Чашка Кава",
+      "description": "Керамічна чашка для найкращого ранку.",
+      "price": 45.5,
+      "imageUrl": "/img/product2.svg",
+      "category": "accessories"
+    },
+    {
+      "id": 3,
+      "name": "Худі Воля",
+      "description": "Тепле худі на зиму.",
+      "price": 75,
+      "imageUrl": "/img/product1.svg",
+      "category": "clothing"
+    },
+    {
+      "id": 4,
+      "name": "Сумка-шопер",
+      "description": "Еко-сумка для покупок.",
+      "price": 50,
+      "imageUrl": "/img/product2.svg",
+      "category": "accessories"
+    },
+    {
+      "id": 5,
+      "name": "Блокнот",
+      "description": "Для твоїх геніальних ідей.",
+      "price": 125,
+      "imageUrl": "/img/product2.svg",
+      "category": "stationery"
+    }
+  ],
+  "orders": [],
+  "users": [
+    {
+      "email": "1111@gmail.com",
+      "password": "123456",
+      "id": 1
+    }
+  ]
+}

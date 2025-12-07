@@ -1,8 +1,6 @@
 import './footer.css'
-import line from '../../img/footer-line.svg'
-import facebook from '../../img/facebook.svg'
-import twitter from '../../img/twitter.svg'
-import instagram from '../../img/instagram.svg'
+// 1. Імпорти картинок видаляємо, бо беремо їх з папки public
+// import line from '../../img/footer-line.svg' ...
 
 function Footer() {
     return (
@@ -16,14 +14,15 @@ function Footer() {
                     </div>
                 </div>
 
-                <img className="line" src={line} alt="line"/>
+                {/* 2. Використовуємо прямий шлях до папки public */}
+                <img className="line" src="/img/footer-line.svg" alt="line"/>
 
                 <div className="footer-bottom">
                     <nav className="footer-nav">
-                    <div className="logo-text">
-                        <h3 className="logo">Dudeshape</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
-                    </div>
+                        <div className="logo-text">
+                            <h3 className="logo">Dudeshape</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                        </div>
 
                         <ul className="footer-ul">
                             <li className="footer-item title-item">Quick Link</li>
@@ -37,14 +36,15 @@ function Footer() {
                             <li className="footer-item">oyasimnaeem@email.com</li>
                             <li className="footer-item">+123456789</li>
                             <div className="social">
-                                <a href="#">
-                                    <img src={facebook} alt="facebook"/>
+                                {/* 3. href="!#" прибирає попередження */}
+                                <a href="!#">
+                                    <img src="/img/facebook.svg" alt="facebook"/>
                                 </a>
-                                <a href="#">
-                                    <img src={twitter} alt="twitter"/>
+                                <a href="!#">
+                                    <img src="/img/twitter.svg" alt="twitter"/>
                                 </a>
-                                <a href="#">
-                                    <img src={instagram} alt="instagram"/>
+                                <a href="!#">
+                                    <img src="/img/instagram.svg" alt="instagram"/>
                                 </a>
                             </div>
                         </ul>

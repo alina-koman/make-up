@@ -1,5 +1,4 @@
 import './hero.css'
-import heroImg from '../../img/hero.svg';
 
 function Hero() {
     return (
@@ -14,8 +13,7 @@ function Hero() {
                     </p>
                     <button className="hero-btn">Shop Now</button>
                 </div>
-
-                <img src={heroImg} alt="hero"/>
+                <img src="/img/hero.svg" alt="hero"/>
 
             </div>
         </section>

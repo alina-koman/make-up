@@ -7,7 +7,7 @@ import './catalog.css';
 function Catalog() {
     const { items, isLoading, error, loadProducts } = useProducts();
 
-    const [searchTerm, setSearchTerm] = useState("");
+        const [searchTerm, setSearchTerm] = useState("");
     const [selectedCategory, setSelectedCategory] = useState("all");
     const [filterPrice, setFilterPrice] = useState("all");
 
@@ -26,7 +26,6 @@ function Catalog() {
         <div className="container">
             <h1 className="catalog-title">Catalog</h1>
 
-            {/* Блок фільтрів */}
             <div className="filters-container" style={{marginBottom: '30px', display: 'flex', gap: '15px', flexWrap: 'wrap'}}>
                 <input
                     type="text"

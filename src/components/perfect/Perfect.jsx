@@ -1,5 +1,4 @@
 import './perfect.css'
-import imgPerfect from '../../img/perfect.svg'
 
 function Perfect() {
     return (
@@ -12,7 +11,7 @@ function Perfect() {
                     <button className="hero-btn">Shop Now</button>
                 </div>
 
-                <img src={imgPerfect} alt="img"/>
+                <img src="/img/perfect.svg" alt="img"/>
             </div>
         </section>
     )
